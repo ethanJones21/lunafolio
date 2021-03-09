@@ -1,0 +1,42 @@
+.text {
+	text-transform: uppercase;
+	background: linear-gradient(to right, var(--white) 0%, var(--color-primary) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font: {
+		size: 10vw;
+	};
+    margin-top: -3.4rem;
+    margin-left: 13.4rem;
+    z-index: 2;
+}
+
+.text-min{
+    text-transform: none;
+    margin-left: 3rem;
+    background: linear-gradient(to right, var(--color-primary) 0%, var(--color-secondary) 100%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font: {
+        size: 4vw;
+    };
+    z-index: 2;
+}
+
+.block-home{
+    z-index: 1;
+    height: 50%;
+    position: relative;
+}
+
+.hint a {
+    color: var(--color-fourth);
+    transition: all 250ms ease-out;
+    -webkit-transition: all 250ms ease-out;
+    -moz-transition: all 250ms ease-out;
+    -o-transition: all 250ms ease-out;
+}
+
+.hint a:hover {
+    color: #FFF;
+}

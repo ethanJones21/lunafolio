@@ -1,0 +1,205 @@
+[
+    {
+        "title": "Lunafolio",
+        "fullname":"Roberto Luna Victoria Monzón",
+        "name": "Roberto",
+        "surnames": "Luna Victoria Monzón",
+        "age": 23,
+        "email": "robertoparatrabajo@hotmail.com",
+        "socials": [
+            { 
+                "title": "robertoparatrabajo@hotmail.com",
+                "icon": "ion-social-facebook"
+            },
+            {
+                "title": "robertoparatrabajo@hotmail.com",
+                "icon": "ion-social-instagram"
+            },
+            {
+                "title": "robertoparatrabajo@hotmail.com",
+                "icon": "ion-social-twitter"
+            },
+            {
+                "title": "robertoparatrabajo@hotmail.com",
+                "icon": "ion-social-pinterest"
+            }
+        ],
+        "phone1": 994245419,
+        "phone2": 994246862,
+        "profile": "Analista de sistemas. Full Stack Developer",
+        "workscomplete": 2,
+        "yearsexperience": 2,
+        "totalclients": 2,
+        "worksfuture": 2,
+        "about": [
+            "Soy tecnico de Analista de sistemas, conclui mis estudios en 2020 y desde mucho antes estoy trabajando en proyectos a gran escala con mucha vision al futuro a donde creo que debemos apuntar siempre",
+            "Soy tecnico de Analista de sistemas, conclui mis estudios en 2020 y desde mucho antes estoy trabajando en proyectos a gran escala con mucha vision al futuro a donde creo que debemos apuntar siempre",
+            "Soy tecnico de Analista de sistemas, conclui mis estudios en 2020 y desde mucho antes estoy trabajando en proyectos a gran escala con mucha vision al futuro a donde creo que debemos apuntar siempre"
+        ],
+        "contact": "Soy tecnico de Analista de sistemas, conclui mis estudios en 2020 y desde mucho antes estoy trabajando en proyectos a gran escala con mucha vision al futuro a donde creo que debemos apuntar siempre",
+        "skills": [
+            {   "title": "html",
+                "perc": "95%"
+            },
+            {   "title": "css3",
+                "perc": "65%"
+            },
+            {   "title": "javascript",
+                "perc": "75%"
+            },
+            {   "title": "typescript",
+                "perc": "75%"
+            },
+            {   "title": "angular",
+                "perc": "85%"
+            },
+            {   "title": "nodejs",
+                "perc": "75%"
+            },
+            {   "title": "firebase",
+                "perc": "65%"
+            }
+        ],
+        "services": [
+            {
+                "title": "Desarrollo Web",
+                "desc": "Desarrollo Web",
+                "icon": "ion-monitor"
+            },
+            {
+                "title":"Desarrollo Backend",
+                "desc":"Dere",
+                "icon": "ion-android-globe"
+            },
+            {
+                "title":"Diseño web",
+                "desc":"Dere",
+                "icon": "ion-camera"
+            },
+            {
+                "title":"Diseño de app",
+                "desc":"Dere",
+                "icon": "ion-android-phone-portrait"
+            },
+            {
+                "title":"Diseño grafico",
+                "desc":"Dere",
+                "icon": "ion-paintbrush"
+            }
+        ],
+        "works": [
+            {
+                "title": "Dimar",
+                "fronted": "Angular",
+                "backend": "Firebase",
+                "ref": "Web",
+                "content": "lorem rem",
+                "price": 0,
+                "users": [
+                    {
+                        "img": "https://source.unsplash.com/200x200/?people",
+                        "name": ""
+                    },
+                    {
+                        "img": "https://source.unsplash.com/200x200/?people",
+                        "name": ""
+                    }
+                ],
+                "usersn": 148923,
+                "video": "https://source.unsplash.com/300x300/?art",
+                "pricetext": "No cost",
+                "date": "18 Sep. 2018",
+                "imgPortada": "",
+                "imgPerfil": "https://lonelyplanetimages.imgix.net/mastheads/stock-photo-st-stephens-church-112868985.jpg?sharp=10&vib=20&w=2000",
+                "imgs": [
+                    "https://source.unsplash.com/600x400/?nature",
+                    "https://source.unsplash.com/200x200/?people"
+                ]
+            },
+            {
+                "title": "Mixing",
+                "fronted": "Angular",
+                "backend": "NodeJS",
+                "ref": "Web, Phone, Desk",
+                "content": "lorem rem",
+                "price": 0,
+                "users": [
+                    {
+                        "img": "https://source.unsplash.com/200x200/?people",
+                        "name": ""
+                    },
+                    {
+                        "img": "https://source.unsplash.com/200x200/?people",
+                        "name": ""
+                    }
+                ],
+                "usersn": 148923,
+                "video": "https://source.unsplash.com/300x300/?art",
+                "pricetext": "No cost",
+                "date": "18 Sep. 2018",
+                "imgPortada": "",
+                "imgPerfil": "https://lonelyplanetimages.imgix.net/mastheads/GettyImages-538096543_medium.jpg?sharp=10&vib=20&w=2000",
+                "imgs": [
+                    "https://source.unsplash.com/600x400/?nature",
+                    "https://source.unsplash.com/200x200/?people"
+                ]
+            },
+            {
+                "title": "Ebook7",
+                "fronted": "Angular",
+                "backend": "NodeJS",
+                "ref": "Web, Phone",
+                "content": "lorem rem",
+                "price": 0,
+                "users": [
+                    {
+                        "img": "https://source.unsplash.com/200x200/?people",
+                        "name": ""
+                    },
+                    {
+                        "img": "https://source.unsplash.com/200x200/?people",
+                        "name": ""
+                    }
+                ],
+                "usersn": 148923,
+                "video": "https://source.unsplash.com/300x300/?art",
+                "pricetext": "No cost",
+                "date": "18 Sep. 2018",
+                "imgPortada": "",
+                "imgPerfil": "https://lonelyplanetimages.imgix.net/mastheads/GettyImages-538096543_medium.jpg?sharp=10&vib=20&w=2000",
+                "imgs": [
+                    "https://source.unsplash.com/600x400/?nature",
+                    "https://source.unsplash.com/200x200/?people"
+                ]
+            },
+            {
+                "title": "Gigga",
+                "fronted": "Angular",
+                "backend": "NodeJS",
+                "ref": "Web, Phone",
+                "content": "lorem rem",
+                "price": 0,
+                "users": [
+                    {
+                        "img": "https://source.unsplash.com/200x200/?people",
+                        "name": ""
+                    },
+                    {
+                        "img": "https://source.unsplash.com/200x200/?people",
+                        "name": ""
+                    }
+                ],
+                "usersn": 148923,
+                "video": "https://source.unsplash.com/300x300/?art",
+                "pricetext": "No cost",
+                "date": "18 Sep. 2018",
+                "imgPortada": "",
+                "imgPerfil": "https://lonelyplanetimages.imgix.net/mastheads/stock-photo-st-stephens-church-112868985.jpg?sharp=10&vib=20&w=2000",
+                "imgs": [
+                    "https://source.unsplash.com/600x400/?nature",
+                    "https://source.unsplash.com/200x200/?people"
+                ]
+            }
+        ]
+    }
+]
