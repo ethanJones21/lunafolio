@@ -29,14 +29,29 @@
     position: relative;
 }
 
-.hint a {
-    color: var(--color-fourth);
-    transition: all 250ms ease-out;
-    -webkit-transition: all 250ms ease-out;
-    -moz-transition: all 250ms ease-out;
-    -o-transition: all 250ms ease-out;
-}
+// .hint a {
+//     color: var(--color-fourth);
+//     transition: all 250ms ease-out;
+//     -webkit-transition: all 250ms ease-out;
+//     -moz-transition: all 250ms ease-out;
+//     -o-transition: all 250ms ease-out;
+// }
 
-.hint a:hover {
-    color: #FFF;
+// .hint a:hover {
+//     color: #FFF;
+// }
+
+.text-rotate {
+    font: {
+		size: 4vw;
+	};
+    position: absolute;
+
+    z-index: -1;
+    top: 140%;
+    left: 60%;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
 }

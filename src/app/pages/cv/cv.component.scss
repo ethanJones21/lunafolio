@@ -36,32 +36,37 @@ h3 {
 .resume .func:hover > div {
     transition-duration: 0.3s;
 }
-.resume .func:hover > div:hover h3 {
+
+.resume .func:hover > div:hover h3, .resume .right:hover > div:hover h3 {
     letter-spacing: 1.6px;
 }
-.resume .func:hover > div:hover h3 i {
+.resume .func:hover > div:hover h3 i, .resume .right:hover > div:hover h3 i {
     transform: scale(1.2);
 }
+
 .resume .func:hover > div:not(:hover) {
     opacity: 0.5;
 }
-.resume .func h3 {
-    transition-duration: 0.3s;
-    margin-top: 0;
-}
-.resume .func h3 i {
-    color: var(--white);
-    background: var(--color-fourth);
-    width: 42px;
-    height: 42px;
-    font-size: 20px;
-    line-height: 42px;
-    border-radius: 50%;
-    text-align: center;
-    vertical-align: middle;
-    margin-right: 8px;
-    transition-duration: 0.3s;
-}
+
+// .resume .func h3 {
+//     transition-duration: 0.3s;
+//     margin-top: 0;
+// }
+
+// .resume .func h3 i {
+//     color: var(--white);
+//     background: var(--color-fourth);
+//     width: 42px;
+//     height: 42px;
+//     font-size: 20px;
+//     line-height: 42px;
+//     border-radius: 50%;
+//     text-align: center;
+//     vertical-align: middle;
+//     margin-right: 8px;
+//     transition-duration: 0.3s;
+// }
+
 .resume .func .work, .resume .func .edu {
     float: left;
 }
@@ -127,10 +132,8 @@ h3 {
 
 // intereses
 .interests-items {
-    box-sizing: border-box;
     padding: 15px;
     width: 100%;
-    border: 1px solid #cdcdcd;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -167,4 +170,40 @@ h3 {
 }
 .interests-items div span {
     display: block;
+}
+
+
+
+
+// h3
+
+h3 {
+    transition-duration: 0.3s;
+    margin-top: 0;
+}
+
+h3 i {
+    color: var(--white);
+    background: var(--color-fourth);
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    line-height: 42px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 8px;
+    transition-duration: 0.3s;
+}
+
+.right{
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: space-around;
+    align-items: center;
+}
+
+.skills, .interests{
+    padding: 30px 25px;
+    margin-bottom: 1rem;
 }

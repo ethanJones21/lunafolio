@@ -14,6 +14,7 @@ import { TimelineComponent } from './components/timeline/timeline.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CvComponent } from './pages/cv/cv.component';
+import { CircleProgressComponent } from './components/circle-progress/circle-progress.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CvComponent } from './pages/cv/cv.component';
     SidebarComponent,
     TimelineComponent,
     HomeComponent,
-    CvComponent
+    CvComponent,
+    CircleProgressComponent
   ],
   imports: [
     BrowserModule,

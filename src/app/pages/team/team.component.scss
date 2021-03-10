@@ -27,7 +27,7 @@
     }
 
     &:after {
-        background-color: transparentize(#222831, 0.15);
+        background-color: transparentize(#2EB39F, 0.15);
         opacity: 1;
         transition: opacity 0.5s ease;
     }
@@ -35,7 +35,7 @@
         background-color: transparentize(#121519, 0.15);
     }
     &--third:after{
-        background-color: transparentize(#30475e, 0.15);
+        background-color: transparentize(#4F5EFF, 0.15);
     }
     &--fourth:after{
         background-color: transparentize(#f05454, 0.15);
@@ -81,7 +81,6 @@
     opacity: 0;
     
     h1 {
-        font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
         text-transform: uppercase;
         color: #1779cf;
         font-size: 1.44rem;

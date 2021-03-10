@@ -1,0 +1,25 @@
+.circle-progress{
+    display: flex;
+    max-width: 200px;
+    max-height: 200px;
+    &__element{
+        width: 106px;
+        height: 106px;
+        margin-right: 1rem;
+    }
+    &__title{
+        position: absolute;
+        &--25{
+            top: 25%;
+            left: 54%;
+        }
+        &--50{
+            top: 25%;
+            left: 62%;
+        }
+        &--75{
+            top: 25%;
+            left: 70%;
+        }
+    }
+}
