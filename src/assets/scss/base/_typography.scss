@@ -1,0 +1,40 @@
+@import "abstracts/_variables";
+
+h1 {
+    font-size: $t1;
+}
+h2 {
+    font-size: $t2;
+}
+h3 {
+    font-size: $t3;
+}
+
+h6,
+a,
+p {
+    font-size: $t6;
+}
+
+@for $i from 1 to 7 {
+    .t#{$i}-l {
+        font-size: #{"$t#{$i}"};
+        font-weight: 300;
+    }
+    .t#{$i}-r {
+        font-size: #{"$t#{$i}"};
+        font-weight: 400;
+    }
+    .t#{$i}-m {
+        font-size: #{"$t#{$i}"};
+        font-weight: 500;
+    }
+    .t#{$i}-sb {
+        font-size: #{"$t#{$i}"};
+        font-weight: 600;
+    }
+    .t#{$i}-b {
+        font-size: #{"$t#{$i}"};
+        font-weight: 700;
+    }
+}
