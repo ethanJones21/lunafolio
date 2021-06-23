@@ -2,25 +2,46 @@
     <nav class="menu-icons">
         <ul class="menu-icons__list">
             <li class="menu-icons__element">
-                <a class="menu-icons__link">
-                    <i class="icon fa fa-bolt"></i>
+                <a
+                    [routerLink]="['/']"
+                    routerLinkActive="router-link-active"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                    class="menu-icons__link"
+                >
+                    <i class="fa fa-bolt"></i>
                 </a>
             </li>
             <li class="menu-icons__element">
-                <a class="menu-icons__link">
-                    <i class="icon fas fa-keyboard"></i>
+                <a
+                    [routerLink]="['/works']"
+                    routerLinkActive="router-link-active"
+                    class="menu-icons__link"
+                >
+                    <i class="fas fa-keyboard"></i>
                 </a>
             </li>
             <li class="menu-icons__element">
-                <a class="menu-icons__link">
-                    <i class="icon fa fa-rocket"></i>
+                <a
+                    [routerLink]="['/cv']"
+                    routerLinkActive="router-link-active"
+                    class="menu-icons__link"
+                >
+                    <i class="fa fa-rocket"></i>
                 </a>
             </li>
             <li class="menu-icons__element">
-                <a class="menu-icons__link">
-                    <i class="icon fab fa-dribbble"></i>
+                <a
+                    [routerLink]="['/team']"
+                    routerLinkActive="router-link-active"
+                    class="menu-icons__link"
+                >
+                    <i class="fab fa-dribbble"></i>
                 </a>
             </li>
         </ul>
     </nav>
+
+    <main>
+        <pages></pages>
+    </main>
 </div>

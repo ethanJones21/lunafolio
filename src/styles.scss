@@ -4,9 +4,14 @@
 @import "base/_base";
 @import "base/_typography";
 @import "abstracts/_variables";
+@import "animations/_fadeInLeft";
 
 body {
     font-family: "Quicksand", sans-serif;
     font-size: $t6;
     font-weight: $base-weight;
+}
+
+.pointer {
+    cursor: pointer;
 }
