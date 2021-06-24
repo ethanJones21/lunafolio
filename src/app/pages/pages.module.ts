@@ -5,26 +5,24 @@ import { PagesRoutingModule } from './pages-routing.module';
 import { RouterModule } from '@angular/router';
 import { CvComponent } from './cv/cv.component';
 import { HomeComponent } from './home/home.component';
-import { TeamComponent } from './team/team.component';
 import { WorksComponent } from './works/works.component';
 import { PagesComponent } from './pages.component';
 import { NotfoundpageComponent } from './notfoundpage/notfoundpage.component';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
     declarations: [
         PagesComponent,
         CvComponent,
         HomeComponent,
-        TeamComponent,
         WorksComponent,
         NotfoundpageComponent,
     ],
-    imports: [CommonModule, PagesRoutingModule, RouterModule],
+    imports: [CommonModule, PagesRoutingModule, RouterModule, ComponentsModule],
     exports: [
         PagesComponent,
         CvComponent,
         HomeComponent,
-        TeamComponent,
         WorksComponent,
         NotfoundpageComponent,
     ],

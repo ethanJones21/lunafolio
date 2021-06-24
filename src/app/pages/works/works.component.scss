@@ -3,12 +3,18 @@
 
 // // ============= MAIN LAYOUT ==============
 
+img {
+    object-fit: cover;
+    object-position: center;
+}
+
 .works {
-    // width: 88%;
     display: grid;
-    grid-template-rows: $header-height 1fr $footer-height;
-    grid-template-columns: $nav-width 1fr;
+    // grid-template-rows: $header-height 1fr $footer-height;
+    // grid-template-columns: $nav-width 1fr;
     height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .header,
@@ -25,7 +31,7 @@
     justify-content: space-between;
     grid-column: 1 / -1;
     padding: 0 $default-spacing;
-    border-bottom: 1px solid rgba(var(--white), 0.1);
+    border-bottom: 1px solid rgba($color-white, 0.1);
 
     &__left,
     &__right {
@@ -81,35 +87,6 @@
     }
 }
 
-// // ============= NAVIGATION ==============
-
-.nav {
-    display: none;
-    border-right: 1px solid rgba($color-white, 0.1);
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-
-    &__item:not(:last-child) {
-        border-bottom: 1px solid rgba($color-white, 0.1);
-    }
-
-    &__link {
-        display: block;
-        color: $color-white;
-        font-weight: 200;
-
-        &:hover,
-        &:focus {
-            background-color: rgba($color-white, 0.035);
-        }
-    }
-
-    @media screen and (min-width: 1024px) {
-        display: block;
-        grid-column: 1 / 2;
-    }
-}
-
 // ============= PAGE SECTIONS ==============
 
 .section {
@@ -158,9 +135,11 @@
     }
     &__subtitle {
         font-size: $t5;
-        color: $color-fourth;
+        font-weight: 400;
+        color: $color-white;
+        margin-left: 0.05rem;
     }
-    &__controls {
+    &__team {
         display: flex;
         align-items: center;
         position: absolute;
@@ -205,7 +184,7 @@
         }
         &--push {
             @media screen and (min-width: 1280px) {
-                grid-column: span 2;
+                grid-column: span 3;
                 padding-left: 50%;
             }
         }
@@ -236,11 +215,11 @@
     }
 
     &--weather {
-        background-color: $color-secondary;
+        background-color: $color-primary;
         padding: 1rem;
     }
     &--cost {
-        background-color: $color-third;
+        background-color: $color-secondary;
     }
     &--locations {
         background-color: $color-third;
@@ -283,8 +262,7 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        object-fit: cover;
-        object-position: center;
+
         border-radius: $border-radius;
     }
 }
@@ -372,7 +350,6 @@
         margin-right: $default-spacing / 2;
         border-radius: $border-radius / 2;
         object-position: center center;
-        object-fit: cover;
     }
     &__content {
         margin: 0;
@@ -380,7 +357,7 @@
     }
 }
 
-.user {
+.ceo {
     margin-left: auto;
     text-align: center;
     padding-top: 2rem;
@@ -388,7 +365,7 @@
     &__name {
         display: block;
         font-size: $t4;
-        font-weight: 400;
+        font-weight: 700;
         color: $color-white;
     }
 
@@ -401,25 +378,28 @@
     }
 }
 
-.btn {
+.team {
     display: flex;
     flex: 0 0 50px;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
-    border: 0;
-    padding: 0;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    background-color: $color-white;
-    margin: 0 0.5rem;
-}
+    .ceo {
+        text-align: center;
+        &__name {
+            display: block;
+            font-size: $t5;
+            font-weight: 500;
+            color: $color-white;
+        }
 
-button:focus {
-    outline: 0;
-    border-color: $color-third;
-    box-shadow: 0 0 0 1px $color-third;
+        &__img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-bottom: 0.2rem;
+            box-shadow: 0 0 38px rgba(0, 0, 0, 0.3);
+        }
+    }
 }
 
 .min-text {
@@ -433,7 +413,7 @@ button:focus {
 /* Video Modal - Theater Mode
 -------------------------------------------------------------------------------*/
 .vmodal {
-    background-color: $color-primary;
+    background-color: $color-dark;
     color: $color-white;
     position: absolute;
     top: 0;

@@ -1,15 +1,36 @@
-import { Component, OnInit } from '@angular/core';
+import {
+    Component,
+    OnInit,
+    OnChanges,
+    SimpleChanges,
+    Input,
+} from '@angular/core';
 
 @Component({
-  selector: 'app-circle-progress',
-  templateUrl: './circle-progress.component.html',
-  styleUrls: ['./circle-progress.component.scss']
+    selector: 'circle-progress',
+    templateUrl: './circle-progress.component.html',
+    styleUrls: ['./circle-progress.component.scss'],
 })
-export class CircleProgressComponent implements OnInit {
+export class CircleProgressComponent implements OnInit, OnChanges {
+    @Input() value: number;
+    radius = 54;
+    circumference = 2 * Math.PI * this.radius;
+    dashoffset: number;
 
-  constructor() { }
+    constructor() {
+        this.progress(0);
+    }
 
-  ngOnInit(): void {
-  }
+    ngOnInit() {}
 
+    ngOnChanges(changes: SimpleChanges) {
+        if (changes.value.currentValue !== changes.value.previousValue) {
+            this.progress(changes.value.currentValue);
+        }
+    }
+
+    private progress(value: number) {
+        const progress = value / 100;
+        this.dashoffset = this.circumference * (1 - progress);
+    }
 }

@@ -5,17 +5,16 @@
     max-height: 100vh;
     display: flex;
     align-items: center;
-    overflow: hidden;
-    // transition: all 0.6s cubic-bezier(0.5, 0.2, 0.2, 1.1);
 }
 
 .menu-icons {
+    margin: 0;
     width: 9rem;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $color-primary;
+    background-color: $color-dark;
 }
 
 .menu-icons__list {
@@ -36,7 +35,7 @@
 }
 
 .menu-icons__element:hover i {
-    color: $color-third;
+    color: $color-primary;
 }
 
 .menu-icons__link i {
@@ -45,11 +44,12 @@
 }
 
 .router-link-active i {
-    color: $color-third;
+    color: $color-primary;
 }
 
 main {
     width: calc(100% - 9rem);
+    background: $color-dark;
     max-height: 100vh;
-    background: $color-primary;
+    overflow-y: hidden;
 }

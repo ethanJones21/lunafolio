@@ -1,0 +1,35 @@
+// COLORS
+
+$color-dark: #171717; //primary
+$color-font: #444444; //secondary
+
+$color-primary: #da0037; //third
+$color-secondary: #345d7e; //fourth
+$color-third: #f8b195;
+
+$color-white: #ededed;
+
+// FONT
+
+$base-font: 16px;
+$scale: 1.333;
+$base-weight: 400;
+
+$t6: $base-font / $scale;
+$t7: $t6 / $scale;
+
+$t5: $t6 * $scale;
+$t4: $t5 * $scale;
+$t3: $t4 * $scale;
+$t2: $t3 * $scale;
+$t1: $t2 * $scale;
+
+@media screen and (min-width: 640px) {
+    $t7: $base-font / $scale;
+    $t6: $base-font;
+    $t5: $t6 * $scale;
+    $t4: $t5 * $scale;
+    $t3: $t4 * $scale;
+    $t2: $t3 * $scale;
+    $t1: $t2 * $scale;
+}

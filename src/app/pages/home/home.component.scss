@@ -1,10 +1,6 @@
 @import "abstracts/_variables";
 
 .home {
-    // height: 50%;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
     display: flex;
     align-items: center;
     &__img {
@@ -41,7 +37,7 @@
             margin-left: 3rem;
             background: linear-gradient(
                 to right,
-                $color-fourth 0%,
+                $color-secondary 0%,
                 $color-third 100%
             );
             -webkit-background-clip: text;
@@ -75,7 +71,7 @@
         &__profession {
             background: linear-gradient(
                 to right,
-                $color-third 0%,
+                $color-secondary 0%,
                 $color-white 100%
             );
             -webkit-background-clip: text;
@@ -94,111 +90,4 @@
             margin-left: 21rem;
         }
     }
-
-    // .home__img{
-
-    // }
-
-    // img {
-    //     position: absolute;
-    //     bottom: 0;
-    //     right: 10rem;
-    //     // width: 25rem;
-    //     height: 35rem;
-    //     object-fit: contain;
-    // }
 }
-
-// // .hint a {
-// //     color: var(--color-fourth);
-// //     transition: all 250ms ease-out;
-// //     -webkit-transition: all 250ms ease-out;
-// //     -moz-transition: all 250ms ease-out;
-// //     -o-transition: all 250ms ease-out;
-// // }
-
-// // .hint a:hover {
-// //     color: #FFF;
-// // }
-
-// &__contain{
-//     position: relative;
-//     &__name {
-//         text-transform: uppercase;
-//         background: linear-gradient(
-//             to right,
-//             $color-white 0%,
-//             $color-primary 100%
-//         );
-//         -webkit-background-clip: text;
-//         -webkit-text-fill-color: transparent;
-//         font: {
-//             size: $t1 * 3;
-//         }
-//         margin-top: -5.4rem;
-//         margin-left: 7rem;
-//     }
-
-//     &__text-1 {
-//         text-transform: none;
-//         margin-left: 3rem;
-//         background: linear-gradient(
-//             to right,
-//             $color-fourth 0%,
-//             $color-third 100%
-//         );
-//         -webkit-background-clip: text;
-//         -webkit-text-fill-color: transparent;
-//         font: {
-//             size: $t2 * 1.5;
-//             weight: 400;
-//         }
-//     }
-
-//     &__text-2 {
-//         background: linear-gradient(
-//             to right,
-//             $color-third 0%,
-//             $color-white 100%
-//         );
-//         -webkit-background-clip: text;
-//         -webkit-text-fill-color: transparent;
-//         font: {
-//             size: $t3 * 2;
-//             weight: 500;
-//         }
-//         position: absolute;
-//         top: 13rem;
-//         left: 13.5rem;
-//         // top: 13rem;
-//         // left: 25rem;
-//         -webkit-writing-mode: vertical-lr;
-//         -ms-writing-mode: tb-lr;
-//         writing-mode: vertical-lr;
-//         text-orientation: sideways;
-//     }
-
-//     &__profession {
-//         background: linear-gradient(
-//             to right,
-//             $color-third 0%,
-//             $color-white 100%
-//         );
-//         -webkit-background-clip: text;
-//         -webkit-text-fill-color: transparent;
-//         font: {
-//             size: $t4 * 2;
-//             weight: 500;
-//         }
-//         position: absolute;
-//         top: 12rem;
-//         left: 21rem;
-
-//         span {
-//             font: {
-//                 size: $t3 * 4;
-//                 weight: 600;
-//             }
-//         }
-//     }
-// }

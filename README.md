@@ -30,8 +30,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 `Base`
 
-@author Alberto Hartzet 
-*I wouldn't mind if you use this piece of code in your project as long 
+@author Alberto Hartzet
+\*I wouldn't mind if you use this piece of code in your project as long
 as you give credit with a link to my site. www.albertohartzet.com
 Licence (CC BY-NC-SA 4.0) http://creativecommons.org/licenses/by-nc-sa/4.0/
 
@@ -39,3 +39,7 @@ Licence (CC BY-NC-SA 4.0) http://creativecommons.org/licenses/by-nc-sa/4.0/
 
 @elrumordelaluz - Provided scaling fix/improvement
 @faddee - Provided fix for Edge support
+
+"stylePreprocessorOptions": {
+"includePaths": ["src/assets/scss"]
+}

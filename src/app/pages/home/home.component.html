@@ -1,13 +1,16 @@
 <div class="home fadeinleft">
     <div class="desc">
-        <p class="desc__text-1">Mi nombre es</p>
-        <h1 class="desc__name">Roberto</h1>
-        <p class="desc__text-2">y soy</p>
-        <h3 class="desc__profession"><span>A</span>nalista de Sistemas</h3>
+        <p class="desc__text-1 lightspeedin">Mi nombre es</p>
+        <h1 class="desc__name lightspeedin">Roberto</h1>
+        <p class="desc__text-2 rollin">y soy</p>
+        <h3 class="desc__profession">
+            <span class="rollin">A</span>nalista de Sistemas
+        </h3>
     </div>
     <div class="home__img">
         <img
-            src="assets/img/prueba.png"
+            class="lazyload"
+            [attr.data-src]="'assets/img/prueba.png'"
             alt="
   Photo by Amina Filkins from Pexels
   "

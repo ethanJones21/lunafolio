@@ -1,4 +1,4 @@
-<div class="works fadeinleft" *ngIf="info.length > 0">
+<div class="works fadeinleft" *ngIf="info.length > 0; else loading">
     <header class="header">
         <div class="header__left">
             <span>Trabajos</span>
@@ -8,29 +8,6 @@
             <!-- <p>{{ hoy | date: "medium" }}</p> -->
         </div>
     </header>
-
-    <nav class="nav">
-        <ul class="nav__menu pointer">
-            <ng-container *ngFor="let work of info[0].works">
-                <li class="nav__item">
-                    <a class="nav__link" data-scroll-to>
-                        <div class="media">
-                            <img
-                                [src]="work.imgPerfil"
-                                [alt]="work.title"
-                                class="media__img"
-                            />
-                            <p class="media__content min-text">
-                                <strong>{{ work.title }}</strong
-                                ><br />
-                                {{ work.ref }}
-                            </p>
-                        </div>
-                    </a>
-                </li>
-            </ng-container>
-        </ul>
-    </nav>
     <main class="main">
         <ng-container *ngFor="let work of info[0].works">
             <article class="section" id="vienna" data-section>
@@ -42,20 +19,24 @@
                 >
                     <h2 class="section__title">{{ work.title }}</h2>
                     <p class="section__subtitle">{{ work.content }}</p>
-                    <div class="section__controls">
-                        <button class="btn btn--prev" title="Previous">
-                            <span class="arrow arrow--left"></span>
-                        </button>
-                        <button class="btn btn--next" title="Next">
-                            <span class="arrow arrow--right"></span>
-                        </button>
-                        <div class="user">
+                    <div class="section__team">
+                        <div class="team">
+                            <div class="user">
+                                <img
+                                    [attr.data-src]="work.users[0].img"
+                                    class="ceo__img lazyload"
+                                    alt=""
+                                />
+                                <span class="ceo__name">Jamie</span>
+                            </div>
+                        </div>
+                        <div class="ceo">
                             <img
-                                [src]="work.users[0].img"
-                                class="user__img"
+                                [attr.data-src]="work.users[0].img"
+                                class="ceo__img lazyload"
                                 alt=""
                             />
-                            <span class="user__name">Jamie</span>
+                            <span class="ceo__name">Jamie</span>
                         </div>
                     </div>
                 </header>
@@ -77,8 +58,8 @@
                                 class="box box--image"
                             >
                                 <img
-                                    [src]="work.imgs[0]"
-                                    class="box__img"
+                                    [attr.data-src]="work.imgs[0]"
+                                    class="box__img lazyload"
                                     [alt]="work.title"
                                 />
                             </a>
@@ -89,8 +70,8 @@
                                 class="box box--image"
                             >
                                 <img
-                                    [src]="work.imgs[1]"
-                                    class="box__img"
+                                    [attr.data-src]="work.imgs[1]"
+                                    class="box__img lazyload"
                                     [alt]="work.title"
                                 />
                             </a>
@@ -110,8 +91,8 @@
                                 class="box box--video"
                             >
                                 <img
-                                    [src]="work.video"
-                                    class="box__img"
+                                    [attr.data-src]="work.video"
+                                    class="box__img lazyload"
                                     [alt]="work.title"
                                 />
                             </a>
@@ -134,13 +115,17 @@
 </div>
 
 <!-- video modal -->
-<div class="vmodal">
+<div class="vmodal fadein">
     <div class="vmodal__icons">
-        <a class="cerrar" (click)="closeModal()">&#8592;</a>
-        <a class="cerrar" (click)="closeModal()">X</a>
+        <a class="cerrar" (click)="closeModal()"
+            ><i class="far fa-long-arrow-left"></i
+        ></a>
+        <a class="cerrar" (click)="closeModal()"
+            ><i class="fas fa-times"></i
+        ></a>
     </div>
     <ng-container *ngIf="!isVideo">
-        <img [src]="srcModal" alt="imagenModal" />
+        <img class="lazyload" [attr.data-src]="srcModal" alt="imagenModal" />
     </ng-container>
     <ng-container *ngIf="isVideo">
         <iframe
@@ -153,3 +138,7 @@
         ></iframe>
     </ng-container>
 </div>
+
+<ng-template #loading>
+    <circle-loading></circle-loading>
+</ng-template>

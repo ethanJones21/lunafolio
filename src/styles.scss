@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+// @import url(https://fonts.googleapis.com/css?family=Carter+One);
 
 @import "vendors/_normalize";
 @import "base/_base";
 @import "base/_typography";
 @import "abstracts/_variables";
 @import "animations/_fadeInLeft";
+@import "animations/_fadeIn";
+@import "animations/_rollIn";
+@import "animations/_lightSpeedIn";
 
 body {
     font-family: "Quicksand", sans-serif;
@@ -14,4 +18,13 @@ body {
 
 .pointer {
     cursor: pointer;
+}
+
+.lazyload,
+.lazyloading {
+    opacity: 0;
+}
+.lazyloaded {
+    opacity: 1;
+    transition: opacity 1s;
 }
